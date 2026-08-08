@@ -1,6 +1,6 @@
 # HDOCK-Multimer
 
-`HDOCK-Multimer (HDM)` is a computational tool developed for predicting the structure of large protein assemblies. 
+`HDOCK-Multimer (HDM)` is a computational framework for predicting the structure of large protein assemblies. 
 
 With the stoichiometry file, AlphaFold-predicted monomer and subcomponent structures as input, `HDM` automatically selects suitable modeling strategies, including asymmetric docking, symmetric docking and assembly. The final output is a set of ranked predicted structures of the full complex. 
 
@@ -237,8 +237,19 @@ With the inputs ready, you can run the stoichiometry prediction script `HDM_pred
 bash HDM_predict_stoi.sh -stois <candidate_stoi.txt>
 ```
 
+## Citation
 
-## References
+```
+@article {HDOCK-Multimer,
+        title = {HDOCK-Multimer: integrating docking and combinatorial assembly for structure prediction of large protein complexes},
+        author = {Xuan Yao, Yifan Ya, Hao Li, Sheng-You Huang},
+        journal = {Nature Computational Science},
+        year = {2026, under review},
+        doi = {}
+}
+```
+
+## Other references used in HDM 
 **HDOCKlite**
 Yan, Y., Tao, H., He, J. & Huang, S.-Y. The HDOCK server for integrated protein-protein docking. Nat Protoc. 15, 1829-1852 (2020).
 
@@ -247,9 +258,6 @@ Yan, Y., Tao, H. & Huang, S.-Y. HSYMDOCK: a docking web server for predicting th
 
 **MMalign / US-align**
 Zhang, C., Shine, M., Pyle, A. M. & Zhang, Y. US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes. Nat Methods 19, 1109–1115 (2022).
-
-Zhang, C. & Pyle, A. M. A unified approach to sequential and non-sequential structure alignment of proteins, RNAs, and DNAs. iScience 25, 105218 (2022).
-
 
 **STRIDE**
 Frishman, D. & Argos, P. Knowledge-based protein secondary structure assignment. Proteins. 23, 566-579 (1995).
